@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   root 'projects#index'
 
   resources :todos
-  get 'hellos/index' => 'hellos#index'
+  # get 'hellos/index' => 'hellos#index'
 
   root 'hello#index'
 
