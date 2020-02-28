@@ -1,0 +1,96 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+div.container {
+    text-align: center;
+}
+.list-title {
+    font-size: xx-large;
+    font-weight: 200;
+    border-bottom: dashed 1px #87CEFA;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    
+}
+.list-2 {
+    font-size: 1rem;
+    
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    margin: auto;
+    font-family: 'Sacramento', cursive;
+  }
+  .button:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+    margin: auto;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #708090;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-family: 'Sacramento', cursive;
+  }
+  .button2:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.button3 {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background:#fff8dc;/*ボタン色*/
+    color: black;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-family: 'Sacramento', cursive;
+  }
+  .button3:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.button4 {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background:#ff6347;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-family: 'Sacramento', cursive;
+  }
+  .button3:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+.task-wrapper {
+    width: 270px;
+    height: 130px;
+    margin: 0 auto;  
+}
+.a1 {
+    text-align: center;
+}

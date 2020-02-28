@@ -1,0 +1,20 @@
+<div class="container">
+ <h1 class="list-title">編集</h1>
+
+ <%= form_for @project do |f| %>
+ <p>
+<%= f.label :title %><br>
+ <%= f.text_field :title %><br>
+ <% if @project.errors.any? %>
+ <%= @project.errors.messages[:title][0] %>
+ <% end %>
+ </p>
+
+ <p>
+ <%= link_to "変更", projects_path, class: "button4" %>
+ </p>
+ <p>
+ <%= link_to "一覧へ", projects_path , class: "button" %>
+ </p>
+ <% end %>
+</div>

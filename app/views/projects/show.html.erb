@@ -1,0 +1,26 @@
+<div class="top">
+<h1 class="list-title"><%= @project.title %></h1>
+<div class="task-wrapper">
+<ul>
+<% @project.tasks.each do | task| %>
+<li>
+<%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id} %>
+<%= task.title %>
+<%= link_to"削除", project_task_path(task.project_id, task.id), method: :delete,
+data: { confirm: "本当に消しますか？" } %>
+</li>
+<% end %>
+
+<li>
+ <%= form_for [@project, @project.tasks.build] do |f| %>
+ <%= f.text_field :title %>
+ <%= link_to "追加", projects_path, class: "button3" %>
+ <% end %>
+ </div>
+ <p class="a1">
+ <%= link_to "一覧へ", projects_path , class: "button" %>
+ </p>
+</li>
+</ul>
+</div>
+

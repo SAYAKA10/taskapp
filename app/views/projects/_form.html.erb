@@ -1,0 +1,14 @@
+<%= form_for @project do |f| %>
+<p>
+ <%= f.label :title %><br>
+ <%= f.text_field :title %><br>
+ <% if @project.erroers.any? %>
+  <%= @project.erroers.messages[:title][0] %>
+ <% end %>
+</p>
+
+<p>
+ <%= f.submit %>
+ <%= link_to "一覧へ", projects_path %>
+</p>
+<% end %>
